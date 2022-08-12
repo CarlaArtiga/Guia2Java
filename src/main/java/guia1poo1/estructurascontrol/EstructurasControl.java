@@ -9,9 +9,29 @@ package guia1poo1.estructurascontrol;
  *
  * @author LENOVO
  */
+import java.util.*;
 public class EstructurasControl {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner reader = new Scanner(System.in);
+        
+        //Variables
+        int Var1,Var2;
+        
+        //Escritura y lectura de datos de primer numero
+        System.out.println("Ingrese numero1: ");
+        Var1=reader.nextInt();
+        
+        //Escritura y lectura de datos de segundo numero
+        System.out.println("Ingrese numero2: ");
+        Var2 = reader.nextInt();
+        
+        if(Var1==Var2){
+            System.out.print("Los numeros ingresados son iguales");
+            
+        }
+        else{
+            System.out.println("Los numeros ingresados no son iguales");
+        }
     }
 }
